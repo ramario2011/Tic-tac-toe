@@ -24,7 +24,7 @@ startGame();
 
 function startGame() {
    cells.forEach(cell => cell.addEventListener("click", cellClicked ));
-   message.textContent =`ход ${currentPlayer}`;
+   message.textContent =`Ход ${currentPlayer}`;
    running = true;
 }
 
