@@ -1,13 +1,8 @@
 
 // confirm("Вы хотите поиграть в Крестики-нолики");
-// let a = 2;
 const message  = document.querySelector("#message");
 const cells= document.querySelectorAll(".cell");
 const startButton= document.querySelector("#start_button");
-
-// console.log(cells);
-// message.innerHTML="<p>Crest</p>";
-
 startButton.addEventListener("click", restartGame );
 
 const combinations = [ 
