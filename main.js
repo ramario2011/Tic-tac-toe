@@ -94,8 +94,9 @@ function restartGame() {
     message.textContent = `ход ${currentPlayer}`;
     cells.forEach(cell => cell.textContent = "");
   running = true;
+ 
 }
-console.log(1111)
+
 
 
 
