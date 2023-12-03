@@ -1,5 +1,3 @@
-
-// confirm("Вы хотите поиграть в Крестики-нолики");
 const message  = document.querySelector("#message");
 const cells= document.querySelectorAll(".cell");
 const startButton= document.querySelector("#start_button");
@@ -28,9 +26,7 @@ function startGame() {
    running = true;
 }
 
-// function add(cell) {
-//     cell.addEventListener("click", cellClicked );
-// }
+
 
 function cellClicked() {
     let cellIndex = this.getAttribute("index");
@@ -45,7 +41,6 @@ function cellClicked() {
 function updateCell(cell , index) {
     cell.textContent = currentPlayer;
     cellsState[index] = currentPlayer;
-    // changePlayer();
     checkWinner();
 }
 
@@ -63,9 +58,9 @@ function checkWinner() {
     let win = false;
   for (let i = 0; i < combinations.length; i++) {
     const combo = combinations[i];
-    const a = cellsState[combo[0]]; // cellsState [0] = "X"
-    const b = cellsState[combo[1]]; // cellsState [4] = ""
-    const c = cellsState[combo[2]]; // cellsState [8] = ""
+    const a = cellsState[combo[0]]; 
+    const b = cellsState[combo[1]]; 
+    const c = cellsState[combo[2]]; 
 
     if (a == "" || b == "" || c == "") {
         continue;
